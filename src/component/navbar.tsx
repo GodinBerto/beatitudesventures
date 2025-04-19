@@ -63,12 +63,6 @@ const Navbar = () => {
         <div className="md:hidden mt-4 space-y-3">
           <Link
             href="#"
-            className="block text-sm font-medium text-gray-800 bg-gray-100 px-3 py-2 rounded-full w-fit"
-          >
-            Home
-          </Link>
-          <Link
-            href="#"
             className="block text-sm font-medium text-gray-700 hover:text-black"
           >
             Solutions
@@ -85,7 +79,7 @@ const Navbar = () => {
           >
             Resources
           </Link>
-          <button className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition mt-3">
+          <button className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition mt-3">
             <PhoneCall size={16} />
             <span className="text-sm font-medium">Contact Us</span>
           </button>

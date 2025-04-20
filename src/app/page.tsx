@@ -8,9 +8,6 @@ import { useState } from "react";
 export default function Home() {
   const [selectedService, setSelectedService] = useState(services[0].title);
 
-  const activeService = services.find(
-    (service) => service.title === selectedService
-  );
   return (
     <div>
       <section className="relative overflow-hidden px-6 md:px-12 py-24 text-center h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#f0f4ff] to-[#e0e7ff]">

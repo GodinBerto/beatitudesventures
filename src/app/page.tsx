@@ -226,7 +226,7 @@ export default function Home() {
               <h1 className="font-bold text-black text-3xl lg:text-5xl">
                 BUILT ON {""}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-600">
-                  MORDERN
+                  MODERN
                 </span>{" "}
                 TECHNOLOGIES
               </h1>
@@ -286,22 +286,22 @@ export default function Home() {
                     {/* Testimonial Card 1 */}
                     <TestimonialCard
                       name="John Doe"
-                      position="CEO, Company Name"
+                      position="HR Manager, FT Bank"
                       avatar="/ivanmagalhaes.png"
                       message="This service has been a game-changer for our business. We are now able to provide a more streamlined process and enhanced experience to our clients."
                       rating={4}
                     />
                     <TestimonialCard
                       name="Jane Smith"
-                      position="Marketing Director."
-                      avatar="/ivanmagalhaes.png"
+                      position="Marketing Director, Time Ventures"
+                      avatar="/stephenshaw.png"
                       message="The team went above and beyond to meet our expectations. Their attention to detail and customer service are unmatched."
                       rating={5}
                     />
                     <TestimonialCard
                       name="Michael Lee"
                       position="Founder, StartupCo"
-                      avatar="/ivanmagalhaes.png"
+                      avatar="/xuxuefeng.png"
                       message="A fantastic company that truly listens to its customers. Their solution was exactly what we were looking for to scale our business."
                       rating={4}
                     />

@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -30,19 +31,29 @@ export default function Footer() {
               </h3>
               <ul className="mt-4 space-y-2 text-gray-600 text-sm">
                 <li>
-                  <a href="#" className="hover:text-black">
+                  <Link href="#about-us" className="hover:text-black">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-black">
-                    Careers
-                  </a>
+                  <Link href="#services" className="hover:text-black">
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-black">
-                    Blog
-                  </a>
+                  <Link href="#technologies" className="hover:text-black">
+                    Technologies
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#testimonials" className="hover:text-black">
+                    Testimonials
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#contact-us" className="hover:text-black">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>

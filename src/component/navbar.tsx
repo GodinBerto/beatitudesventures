@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu, X, PhoneCall } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -18,33 +18,39 @@ const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6">
           <Link
-            href="#"
-            className="text-sm font-medium text-gray-700 hover:text-black"
-          >
-            Solutions
-          </Link>
-
-          <Link
-            href="#"
+            href="#about-us"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
             About Us
           </Link>
-
           <Link
-            href="#"
+            href="#services"
             className="text-sm font-medium text-gray-700 hover:text-black"
           >
-            Resources
+            Services
+          </Link>
+
+          <Link
+            href="#technologies"
+            className="text-sm font-medium text-gray-700 hover:text-black"
+          >
+            Technologies
+          </Link>
+          <Link
+            href="#testimonials"
+            className="text-sm font-medium text-gray-700 hover:text-black"
+          >
+            Testimonials
           </Link>
         </div>
 
         {/* Contact Button (Always Visible) */}
         <div className="hidden md:flex">
-          <button className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800 transition">
-            <PhoneCall size={16} />
-            <span className="text-sm font-medium">Contact Us</span>
-          </button>
+          <Link href="#contact-us">
+            <button className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
+              <span className="text-sm font-medium">Contact Us</span>
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -62,27 +68,39 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden mt-4 space-y-3">
           <Link
-            href="#"
-            className="block text-sm font-medium text-gray-700 hover:text-black"
-          >
-            Solutions
-          </Link>
-          <Link
-            href="#"
-            className="block text-sm font-medium text-gray-700 hover:text-black"
+            href="#about-us"
+            className="text-sm font-medium text-gray-700 hover:text-black block"
+            onClick={() => setIsOpen(false)}
           >
             About Us
           </Link>
           <Link
-            href="#"
-            className="block text-sm font-medium text-gray-700 hover:text-black"
+            href="#services"
+            className="text-sm font-medium text-gray-700 hover:text-black block"
+            onClick={() => setIsOpen(false)}
           >
-            Resources
+            Services
           </Link>
-          <button className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition mt-3">
-            <PhoneCall size={16} />
-            <span className="text-sm font-medium">Contact Us</span>
-          </button>
+
+          <Link
+            href="#technologies"
+            className="text-sm font-medium text-gray-700 hover:text-black block"
+            onClick={() => setIsOpen(false)}
+          >
+            Technologies
+          </Link>
+          <Link
+            href="#testimonials"
+            className="text-sm font-medium text-gray-700 hover:text-black block"
+            onClick={() => setIsOpen(false)}
+          >
+            Testimonials
+          </Link>
+          <Link href="#contact-us" onClick={() => setIsOpen(false)}>
+            <button className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 transition">
+              <span className="text-sm font-medium">Contact Us</span>
+            </button>
+          </Link>
         </div>
       )}
     </nav>

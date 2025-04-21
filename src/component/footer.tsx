@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,10 +11,13 @@ export default function Footer() {
             <div className="flex flex-col space-y-4">
               {/* Logo */}
               <div className="flex items-center space-x-2">
-                <div className="w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500" />
-                <span className="text-lg font-semibold text-gray-900">
-                  logo.
-                </span>
+                <Image
+                  src={"/logo1.png"}
+                  alt="logo"
+                  width={100}
+                  height={100}
+                  className="w-30 h-12 object-cover"
+                />
               </div>
 
               <div>

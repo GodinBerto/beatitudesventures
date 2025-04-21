@@ -64,7 +64,7 @@ export default function Home() {
             </h1>
             <div>
               <div className="flex flex-col md:flex-row gap-8">
-                <div className="md:w-1/2 w-full flex flex-col gap-4">
+                <div className="md:w-1/2 w-full flex flex-col gap-4 h-64 justify-between">
                   <h1 className="font-bold text-black text-3xl lg:text-5xl">
                     BEATITUDE {""}
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-blue-600">
@@ -73,11 +73,12 @@ export default function Home() {
                     MISSION
                   </h1>
                   <p className="mt-6 text-gray-800 text-base md:text-md">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsum obcaecati pariatur odio enim, tenetur dolores
-                    inventore illum architecto? Beatae aliquam totam quibusdam!
-                    Voluptate adipisci maiores voluptatibus optio, error labore
-                    reprehenderit?
+                    At Beatitude Ventures, we are dedicated to transforming
+                    innovative ideas into powerful digital solutions. Our
+                    mission is to empower businesses and individuals through
+                    cutting-edge software that is scalable, secure, and
+                    impactful. We believe in building technology that not only
+                    solves problems but also inspires progress and growth.
                   </p>
                 </div>
                 <div className="md:w-1/2 overflow-hidden h-64">
@@ -95,12 +96,13 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-8 mt-6 ">
                 <div className="md:w-1/2"></div>
                 <div className="md:w-1/2 w-full flex flex-col gap-4 border-t-[1px] border-gray-300 pt-6">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                  esse et alias beatae blanditiis odit nostrum reiciendis dolore
-                  ipsum praesentium? Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Corporis eum eius explicabo autem?
-                  Exercitationem nihil eveniet aspernatur, numquam quas
-                  assumenda!
+                  Our team of passionate developers, designers, and strategists
+                  thrives on innovation and collaboration. With a focus on
+                  client-centric development, we craft custom software, mobile
+                  apps, and digital platforms that deliver real value. At
+                  Beatitude Ventures, we&apos;re not just building
+                  products—we&apos;re building the future of digital
+                  experiences.
                 </div>
               </div>
             </div>

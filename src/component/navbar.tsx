@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +12,13 @@ const Navbar = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500" />
-          <span className="text-lg font-semibold text-gray-900">logo.</span>
+          <Image
+            src={"/logo1.png"}
+            alt="logo"
+            width={100}
+            height={100}
+            className="w-30 h-12 object-cover"
+          />
         </div>
 
         {/* Desktop Links */}

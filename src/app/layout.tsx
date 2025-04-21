@@ -26,13 +26,7 @@ export const metadata: Metadata = {
     description: "Beatitude Ventures is a software development company.",
     url: "https://beatitudeventures.com",
     siteName: "Beatitude Ventures",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
+
     locale: "en_US",
     type: "website",
   },

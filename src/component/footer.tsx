@@ -22,8 +22,9 @@ export default function Footer() {
 
               <div>
                 <p className="text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae, quaerat.
+                  Beatitude Ventures transforms innovative ideas into impactful,
+                  secure, and scalable digital solutions that drive growth and
+                  inspire progress.
                 </p>
               </div>
             </div>
